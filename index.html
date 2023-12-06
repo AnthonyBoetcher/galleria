@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="2.jpg">
+    <link rel="icon" type="image/x-icon" href="1.jpg">
     <title>Galleria</title>
     <script src="model3d.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,9 +40,13 @@
      </div>
 
      <div class="blurred-circle" id="vases">
-        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/vases.html" target="_self"><H1>Pottery</H1></a></div>
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/pottery.html" target="_self"><H1>Pottery</H1></a></div>
      </div>
 
+     <div class="blurred-circle" id="vases2">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-pottery....html" target="_self"><H1>More-pottery...</H1></a></div>
+     </div>
+    
      <div class="blurred-circle" id="artwork">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/artwork.html" target="_self"><H1>Artwork</H1></a></div>
      </div>
@@ -189,6 +193,12 @@
         transform: rotate(24deg);
     }
 
+    #vases2 {
+        bottom: 23%;
+        left: 9%;
+        transform: rotate(24deg);
+    }
+
     #artwork {
         top: 33%;
         right: 30.5%;
@@ -221,7 +231,7 @@
         -webkit-transition: transform 1s ease-in-out;
     }
 
-    #vases:hover{
+    #vases:hover , #vases2:hover{
     transform: scale(1.2) rotate(24deg);;
         -webkit-transition: transform 1s ease-in-out;
     }
