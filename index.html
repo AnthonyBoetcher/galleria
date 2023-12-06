@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="alertUser('Welcome to Galleria! Please select a showroom, allow models to load and zoom out (a lot) if screen remains blank. Use left mousebutton and right mousebutton to pan and rotate')">
 
 <div><p id="descrip">3 - D<br>E x h i b i t</b></p></div>
 
@@ -32,11 +32,19 @@
 </div>
 
 <div class="blurred-circle" id="statues">
-        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/statues.html" target="_self"><H1>Sculptures</H1></a></div>
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/sculptures.html" target="_self"><H1>Sculptures</H1></a></div>
+     </div>
+
+    <div class="blurred-circle" id="statues2">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-sculptures....html" target="_self"><H1>More-sculptures...</H1></a></div>
      </div>
 
      <div class="blurred-circle" id="armory">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/armory.html" target="_self"><H1>Armory</H1></a></div>
+     </div>
+
+     <div class="blurred-circle" id="armory2">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-armory....html" target="_self"><H1>More armory...</H1></a></div>
      </div>
 
      <div class="blurred-circle" id="vases">
@@ -51,13 +59,25 @@
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/artwork.html" target="_self"><H1>Artwork</H1></a></div>
      </div>
 
+     <div class="blurred-circle" id="artwork2">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-artwork....html" target="_self"><H1>More-artwork...</H1></a></div>
+     </div>
+
      <div class="blurred-circle" id="scripts">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/scripts.html" target="_self"><H1>Scripts</H1></a></div>
      </div>
 
+    <div class="blurred-circle" id="scripts2">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-scripts....html" target="_self"><H1>More-scripts...</H1></a></div>
+     </div>
+
      <div class="blurred-circle" id="other">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/other.html" target="_self"><H1>Other</H1></a></div>
-     
+     </div>
+
+    <div class="blurred-circle" id="other2">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-other....html" target="_self"><H1>More-other...</H1></a></div>
+     </div>
 </body>
 </html>
 
@@ -179,11 +199,23 @@
         transform: translate(50%, 50%);
         transform: scale(1);    
     }
+    #statues2 {
+        bottom: 15%;
+        right: 30%;
+        transform: translate(50%, 50%);
+        transform: scale(1);    
+    }
    
 
     #armory {
         top: 29%;
         right: 20%;
+        transform: rotate(-26deg);
+    }
+
+    #armory2 {
+        top: 29%;
+        right: 30%;
         transform: rotate(-26deg);
     }
 
@@ -203,30 +235,41 @@
         top: 33%;
         right: 30.5%;
     }
+    #artwork2 {
+        top: 23%;
+        right: 30.5%;
+    }
 
     #scripts {
         top: 34%;
         left: 30.5%;
     }
-
+ #scripts2 {
+        top: 24%;
+        left: 30.5%;
+    }
     #other {
         top: 15%;
         right: 7%;
         transform: rotate(-29deg);
-
+    }
+    #other2 {
+        top: 25%;
+        right: 7%;
+        transform: rotate(-29deg);
     }
 
-  #statues:hover, #armory:hover, #vases:hover, #other:hover, #artwork:hover, #scripts:hover{
+  #statues:hover,#statues2:hover, #armory:hover,#armory2:hover, #vases:hover,#vases2:hover, #artwork:hover,#artwork2:hover, #scripts:hover, #scripts2:hover{
         transform: scale(1.2);
         -webkit-transition: transform 1s ease-in-out;
     }
 
-    #armory:hover {
+    #armory:hover, #armory2:hover {
     transform: scale(1.2) rotate(-26deg);
         -webkit-transition: transform 1s ease-in-out;
     }
 
-    #other:hover{
+    #other:hover, #other2:hover{
     transform: scale(1.2) rotate(-29deg);
         -webkit-transition: transform 1s ease-in-out;
     }
@@ -235,43 +278,10 @@
     transform: scale(1.2) rotate(24deg);;
         -webkit-transition: transform 1s ease-in-out;
     }
-
-    @media (max-width: 768px) {
-        .blurred-circle {
-            width: 150px;
-            height: 150px;
-        }
-
-        #statues {
-            top: 30px;
-            left: 30px;
-        }
-
-        #armory {
-            top: 30px;
-            right: 30px;
-        }
-
-        #vases {
-            bottom: 30px;
-            left: 30px;
-        }
-
-        #paintings {
-            bottom: 30px;
-            right: 30px;
-        }
-
-        #scripts,
-        #other {
-            top: 50%;
-            left: 50%;
-        }
-    }
-    #header {
-        top: 0%;
-        right: 0%;
-}
 </style>
-
+<script>
+    function alertUser(msg) {
+alert(msg);
+}
+</script>
   
