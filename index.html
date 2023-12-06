@@ -4,22 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="icon" type="image/x-icon" href="1.jpg">
-
+    <link rel="icon" type="image/x-icon" href="1.jpg">
     <title>Galleria</title>
     <script src="model3d.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
 </head>
 <body>
-     <div class="link"><a href="https://anthonyboetcher.github.io/galleria/statues.html" target="_self"><H1>Statues</H1></a></div>
-     <div class="link"><a href="https://anthonyboetcher.github.io/galleria/armory.html" target="_self"><H1>Armory</H1></a></div>
-     <div class="link"><a href="https://anthonyboetcher.github.io/galleria/vases.html" target="_self"><H1>Vases</H1></a></div>
-         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/other.html" target="_self"><H1>Paintings</H1></a></div>
-         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/other.html" target="_self"><H1>Scripts</H1></a></div>
-         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/other.html" target="_self"><H1>Other</H1></a></div>
+<div class="blurred-box">
+</div>
+    <div class="blurred-circle" id="statues">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/statues.html" target="_self"><H1>Statues</H1></a></div>
+     </div>
+
+     <div class="blurred-circle" id="armory">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/armory.html" target="_self"><H1>Armory</H1></a></div>
+     </div>
+
+     <div class="blurred-circle" id="vases">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/vases.html" target="_self"><H1>Vases</H1></a></div>
+     </div>
+
+     <div class="blurred-circle" id="paintings">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/paintings.html" target="_self"><H1>Paintings</H1></a></div>
+     </div>
+
+     <div class="blurred-circle" id="scripts">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/scripts.html" target="_self"><H1>Scripts</H1></a></div>
+     </div>
+
+     <div class="blurred-circle" id="other">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/other.html" target="_self"><H1>Other</H1></a></div>
+     
 </body>
 </html>
+
 <style>
-    body{
-        background-image:url('a.jpg');
+    body {
+        background-image: url('a.jpg');
         background-size: cover;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: 'Romanesco', cursive;
+        font-size:xx-large;
+    }
+
+    .blurred-circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 20%;
+        background-color: none;
+        backdrop-filter: blur(4px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+  
+
+    .link a {
+        color: rgba(255, 255, 255, 0.4);
+        text-decoration: none;
+        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6);
+    }
+
+    #statues {
+        bottom: 37%;
+        right: 44.5%;
+        transform: translate(50%, 50%);
+        transform: scale(1);    
+    }
+   
+
+    #armory {
+        bottom: 35%;
+        right: 16%;
+    }
+
+    #vases {
+        bottom: 47%;
+        left: 0%;
+    }
+
+    #paintings {
+        bottom: 31.1%;
+        right: 30.5%;
+    }
+
+    #scripts {
+        bottom: 30%;
+        left: 30.5%;
+    }
+
+    #other {
+        bottom: 44%;
+        right: 0%;
+    }
+
+    #statues:hover, #armory:hover, #vases:hover, #other:hover, #paintings:hover, #scripts:hover{
+        transform: scale(1);
+        -webkit-transition: transform 1s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+        .blurred-circle {
+            width: 150px;
+            height: 150px;
+        }
+
+        #statues {
+            top: 30px;
+            left: 30px;
+        }
+
+        #armory {
+            top: 30px;
+            right: 30px;
+        }
+
+        #vases {
+            bottom: 30px;
+            left: 30px;
+        }
+
+        #paintings {
+            bottom: 30px;
+            right: 30px;
+        }
+
+        #scripts,
+        #other {
+            top: 50%;
+            left: 50%;
+        }
+    }
 </style>
