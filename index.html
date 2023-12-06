@@ -12,9 +12,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="blurred-box">
+
+<div><p id="descrip">3 - D<br>E x h i b i t</b></p></div>
+
+<div class="blurred-circle2" id="header">
+<div class="link" ><a href="https://humanities.uct.ac.za/school-languages-literatures/classics" target="_self"><H1 id="header2">
+    <div class="headerletters">
+        <span>G</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>E</span>
+        <span>R</span>
+        <span>I</span>
+        <span>A</span>
+      </div>
+    
+   </H1></a></div>
 </div>
-    <div class="blurred-circle" id="statues">
+    
+<div class="blurred-circle" id="statues">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/statues.html" target="_self"><H1>Statues</H1></a></div>
      </div>
 
@@ -26,7 +43,7 @@
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/vases.html" target="_self"><H1>Vases</H1></a></div>
      </div>
 
-     <div class="blurred-circle" id="paintings">
+     <div class="blurred-circle" id="artwork">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/artwork.html" target="_self"><H1>Artwork</H1></a></div>
      </div>
 
@@ -41,6 +58,60 @@
 </html>
 
 <style>
+    .headerletters {
+  position: relative;
+  width: 520px;
+  height:300px;
+  margin: 0 auto;
+  font-size: 70px;
+  transform: rotate(1deg);
+}
+.headerletters span {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  width: 70px;
+  height: 550px;
+  margin-left: -35px;
+  line-height: 530px; /* height*2 - font-size */
+  text-align: center;
+  transform-origin: top center;
+}
+.headerletters span:nth-of-type(1)  {
+  transform: rotate(-34deg);
+}
+.headerletters span:nth-of-type(2)  {
+  transform: rotate(-24.5deg);
+}
+.headerletters span:nth-of-type(3)  {
+  transform: rotate(-14.25deg);
+}
+.headerletters span:nth-of-type(4)  {
+  transform: rotate(-4deg);
+}
+.headerletters span:nth-of-type(5)  {
+  transform: rotate(6.25deg);
+}
+.headerletters span:nth-of-type(6)  {
+  transform: rotate(16.5deg);
+}
+.headerletters span:nth-of-type(7)  {
+  transform: rotate(26.75deg);
+}
+.headerletters span:nth-of-type(8)  {
+  transform: rotate(36deg);
+}
+/* Reverse mode */
+.headerletters {
+  font-weight: bold;
+}
+.headerletters span {
+  line-height: 70px;
+  transform-origin: bottom center;
+  color: rgba(218, 165, 32, 0.8);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 0, 0, 0); /* Only for seeing trick */
+}
     body {
         background-image: url('a.jpg');
         background-size: cover;
@@ -58,58 +129,85 @@
         height: 150px;
         border-radius: 20%;
         background-color: none;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(0px);
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
     }
   
+    .blurred-circle2 {
+        width: 350px;
+        height: 150px;
+        border-radius: 20%;
+        background-color: none;
+        backdrop-filter: blur(0px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        
+    }
 
  .link a {
-        color: rgba(255, 255, 255, 0.3);
+        color: rgba(255, 145, 0, 0.3);
         text-decoration: none;
         text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
     }
 
+    #descrip {
+        color: rgba(218, 165, 32, 0.8);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.8);
+  margin: -260px 0 0 0;
+  font-size: 2.5rem;
+  text-align: center;
+    }
 
+#header {
+        margin: 5.5% 39% 0 0;
+}
     #statues {
-        bottom: 37%;
-        right: 44.5%;
+        bottom: 19%;
+        right: 45%;
         transform: translate(50%, 50%);
         transform: scale(1);    
     }
    
 
     #armory {
-        bottom: 35%;
-        right: 16%;
+        top: 29%;
+        right: 20%;
+        transform: rotate(-26deg);
     }
 
     #vases {
-        bottom: 47%;
-        left: 0%;
+        top: 23%;
+        left: 9%;
+        transform: rotate(24deg);
     }
 
-    #paintings {
-        bottom: 31.1%;
+    #artwork {
+        top: 33%;
         right: 30.5%;
     }
 
     #scripts {
-        bottom: 30%;
+        top: 34%;
         left: 30.5%;
     }
 
     #other {
-        bottom: 44%;
-        right: 0%;
+        top: 15%;
+        right: 7%;
+        transform: rotate(-29deg);
+
     }
 
-    #statues:hover, #armory:hover, #vases:hover, #other:hover, #paintings:hover, #scripts:hover{
+  /* #statues:hover, #armory:hover, #vases:hover, #other:hover, #paintings:hover, #scripts:hover{
         transform: scale(1);
         -webkit-transition: transform 1s ease-in-out;
     }
+    */
 
     @media (max-width: 768px) {
         .blurred-circle {
@@ -143,4 +241,10 @@
             left: 50%;
         }
     }
+    #header {
+        top: 0%;
+        right: 0%;
+}
 </style>
+
+  
