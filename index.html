@@ -30,7 +30,7 @@
     
    </H1></a></div>
 </div>
-    
+
 <div class="blurred-circle" id="statues">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/statues.html" target="_self"><H1>Statues</H1></a></div>
      </div>
@@ -114,12 +114,14 @@
 }
     body {
         background-image: url('a.jpg');
+        overflow: hidden;
         background-size: cover;
         margin: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+        width: 100vw;
         font-family: 'Romanesco', cursive;
         font-size:xx-large;
     }
@@ -153,6 +155,7 @@
         color: rgba(255, 145, 0, 0.3);
         text-decoration: none;
         text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.4);
+        font-size: 1.5rem;
     }
 
     #descrip {
@@ -203,11 +206,25 @@
 
     }
 
-  /* #statues:hover, #armory:hover, #vases:hover, #other:hover, #paintings:hover, #scripts:hover{
-        transform: scale(1);
+  #statues:hover, #armory:hover, #vases:hover, #other:hover, #artwork:hover, #scripts:hover{
+        transform: scale(1.2);
         -webkit-transition: transform 1s ease-in-out;
     }
-    */
+
+    #armory:hover {
+    transform: scale(1.2) rotate(-26deg);
+        -webkit-transition: transform 1s ease-in-out;
+    }
+
+    #other:hover{
+    transform: scale(1.2) rotate(-29deg);
+        -webkit-transition: transform 1s ease-in-out;
+    }
+
+    #vases:hover{
+    transform: scale(1.2) rotate(24deg);;
+        -webkit-transition: transform 1s ease-in-out;
+    }
 
     @media (max-width: 768px) {
         .blurred-circle {
