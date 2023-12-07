@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
 </head>
-<body onload="alertUser('Welcome to Galleria! Please select a showroom, allow models to load and zoom out (a lot) if screen remains blank. Use left mousebutton and right mousebutton to pan and rotate')">
+<body onload="alertUser('Welcome to Galleria! Please select a showroom and the allow models to load. Click on screen to select frame and zoom out (a lot) if frame remains blank. Use left mousebutton and right mousebutton to pan and rotate')">
 
 <div><p id="descrip">3 - D<br>E x h i b i t</b></p></div>
 
@@ -30,37 +30,36 @@
     
    </H1></a></div>
 </div>
+    <div class="blurred-circle" id="statues2">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-sculptures....html" target="_self"><H1>More sculptures</H1></a></div>
+     </div>
 
-<div class="blurred-circle" id="statues">
+     <div class="blurred-circle" id="statues">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/sculptures.html" target="_self"><H1>Sculptures</H1></a></div>
      </div>
 
-    <div class="blurred-circle" id="statues2">
-        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-sculptures....html" target="_self"><H1>More-sculptures...</H1></a></div>
+     <div class="blurred-circle" id="armory2">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-armory....html" target="_self"><H1>More armory</H1></a></div>
      </div>
 
      <div class="blurred-circle" id="armory">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/armory.html" target="_self"><H1>Armory</H1></a></div>
      </div>
 
-     <div class="blurred-circle" id="armory2">
-        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-armory....html" target="_self"><H1>More armory...</H1></a></div>
+     <div class="blurred-circle" id="vases2">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-pottery....html" target="_self"><H1>More pottery</H1></a></div>
      </div>
-
+    
      <div class="blurred-circle" id="vases">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/pottery.html" target="_self"><H1>Pottery</H1></a></div>
      </div>
 
-     <div class="blurred-circle" id="vases2">
-        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-pottery....html" target="_self"><H1>More-pottery...</H1></a></div>
-     </div>
-    
      <div class="blurred-circle" id="artwork">
-        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/artwork.html" target="_self"><H1>Artwork</H1></a></div>
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/artwork.html" target="_self"><H1>Art</H1></a></div>
      </div>
 
      <div class="blurred-circle" id="artwork2">
-        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-artwork....html" target="_self"><H1>More-artwork...</H1></a></div>
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-artwork....html" target="_self"><H1>More<br>art</H1></a></div>
      </div>
 
      <div class="blurred-circle" id="scripts">
@@ -68,32 +67,42 @@
      </div>
 
     <div class="blurred-circle" id="scripts2">
-        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-scripts....html" target="_self"><H1>More-scripts...</H1></a></div>
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-scripts....html" target="_self"><H1>More<br>scripts</H1></a></div>
+     </div>
+
+     <div class="blurred-circle" id="other2">
+        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-other....html" target="_self"><H1>More 'other'</H1></a></div>
      </div>
 
      <div class="blurred-circle" id="other">
         <div class="link"><a href="https://anthonyboetcher.github.io/galleria/other.html" target="_self"><H1>Other</H1></a></div>
      </div>
 
-    <div class="blurred-circle" id="other2">
-        <div class="link"><a href="https://anthonyboetcher.github.io/galleria/more-other....html" target="_self"><H1>More-other...</H1></a></div>
-     </div>
+     <audio id="clair" autoplay loop mute controls>
+        <source src="clairDeLune.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+      </audio>
 </body>
 </html>
 
 <style>
+    #clair{
+        position: absolute;
+  bottom: 0%;
+  left: 40%;
+    }
     .headerletters {
   position: relative;
   width: 520px;
   height:300px;
   margin: 0 auto;
   font-size: 70px;
-  transform: rotate(1deg);
+  transform: rotate(0deg);
 }
 .headerletters span {
   position: absolute;
-  top: 12%;
-  left: 50%;
+  top: -75%;
+  left: 106%;
   width: 70px;
   height: 550px;
   margin-left: -35px;
@@ -102,16 +111,16 @@
   transform-origin: top center;
 }
 .headerletters span:nth-of-type(1)  {
-  transform: rotate(-34deg);
+  transform: rotate(-33.0deg);
 }
 .headerletters span:nth-of-type(2)  {
-  transform: rotate(-24.5deg);
+  transform: rotate(-24deg);
 }
 .headerletters span:nth-of-type(3)  {
-  transform: rotate(-14.25deg);
+  transform: rotate(-13.75deg);
 }
 .headerletters span:nth-of-type(4)  {
-  transform: rotate(-4deg);
+  transform: rotate(-3.75deg);
 }
 .headerletters span:nth-of-type(5)  {
   transform: rotate(6.25deg);
@@ -155,6 +164,7 @@
         height: 150px;
         border-radius: 20%;
         background-color: none;
+        display: none;
         backdrop-filter: blur(0px);
         display: flex;
         justify-content: center;
@@ -166,6 +176,7 @@
         width: 350px;
         height: 150px;
         border-radius: 20%;
+        display: none;
         background-color: none;
         backdrop-filter: blur(0px);
         display: flex;
@@ -194,87 +205,101 @@
         margin: 5.5% 39% 0 0;
 }
     #statues {
-        bottom: 15%;
+        bottom: 33%;
         right: 45%;
         transform: translate(50%, 50%);
         transform: scale(1);    
     }
     #statues2 {
-        bottom: 15%;
-        right: 30%;
+        bottom: 19%;
+        right: 43%;
         transform: translate(50%, 50%);
         transform: scale(1);    
     }
    
 
     #armory {
-        top: 29%;
-        right: 20%;
-        transform: rotate(-26deg);
+        top: 17%;
+        right: 14%;
+        transform: rotate(-35deg);
     }
 
     #armory2 {
-        top: 29%;
-        right: 30%;
-        transform: rotate(-26deg);
+        top: 26%;
+        right: 18%;
+        transform: rotate(-30deg);
     }
 
     #vases {
-        top: 23%;
-        left: 9%;
-        transform: rotate(24deg);
+        top: 21%;
+        left: 18%;
+        transform: rotate(30deg);
     }
 
     #vases2 {
-        bottom: 23%;
-        left: 9%;
+        top: 21%;
+        left: 11%;
         transform: rotate(24deg);
     }
 
     #artwork {
         top: 33%;
-        right: 30.5%;
+        right: 34%;
     }
     #artwork2 {
-        top: 23%;
-        right: 30.5%;
+        top: 31%;
+        right: 27%;
     }
 
     #scripts {
-        top: 34%;
-        left: 30.5%;
+        top: 32.5%;
+        left: 34%;
     }
  #scripts2 {
-        top: 24%;
-        left: 30.5%;
+    top: 33%;
+        left: 27%;
     }
     #other {
-        top: 15%;
-        right: 7%;
-        transform: rotate(-29deg);
+        top: -3%;
+        right: 0%;
+        transform: rotate(-39deg);
     }
     #other2 {
-        top: 25%;
-        right: 7%;
-        transform: rotate(-29deg);
+        top: 13%;
+        right: 5%;
+        transform: rotate(-31deg);
     }
 
-  #statues:hover,#statues2:hover, #armory:hover,#armory2:hover, #vases:hover,#vases2:hover, #artwork:hover,#artwork2:hover, #scripts:hover, #scripts2:hover{
+  #statues:hover,#statues2:hover, #armory:hover,#armory2:hover, #artwork:hover,#artwork2:hover, #scripts:hover, #scripts2:hover{
         transform: scale(1.2);
         -webkit-transition: transform 1s ease-in-out;
     }
 
-    #armory:hover, #armory2:hover {
-    transform: scale(1.2) rotate(-26deg);
+    #armory:hover {
+    transform: scale(1.2) rotate(-35deg);
         -webkit-transition: transform 1s ease-in-out;
     }
 
-    #other:hover, #other2:hover{
-    transform: scale(1.2) rotate(-29deg);
+    #armory2:hover {
+    transform: scale(1.2) rotate(-30deg);
         -webkit-transition: transform 1s ease-in-out;
     }
 
-    #vases:hover , #vases2:hover{
+    #other:hover {
+    transform: scale(1.2) rotate(-39deg);
+        -webkit-transition: transform 1s ease-in-out;
+    }
+
+    #other2:hover{
+    transform: scale(1.2) rotate(-31deg);
+        -webkit-transition: transform 1s ease-in-out;
+    }
+
+    #vases:hover {
+    transform: scale(1.2) rotate(30deg);;
+        -webkit-transition: transform 1s ease-in-out;
+    }
+    #vases2:hover{
     transform: scale(1.2) rotate(24deg);;
         -webkit-transition: transform 1s ease-in-out;
     }
