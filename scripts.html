@@ -5,17 +5,41 @@
     <meta name="viewport" content="initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="icon" type="image/x-icon" href="1.jpg">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+<style>
+    h1{
+        width: 100vw;
+        font-family: 'Romanesco', cursive;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgba(218, 165, 32, 0.8);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.8);
+</style>
     <title>Scripts</title>
     <script src="model3d.js"></script>
 </head>
 <body>
-    <model-3d background-color="#ffffff" src="siguenza_cathedral_inscription_9.glb"></model-3d>
-    <model-3d background-color="#ffffff" src="inscription.glb"></model-3d>
-    <model-3d background-color="#ffffff" src="greek_inscription_from_cirenaica.glb"></model-3d>
-    <model-3d background-color="#ffffff" src="wall_inscription_of_saveh_jameh_mosque.glb"></model-3d>
-    <model-3d background-color="#ffffff" src="carranque_islamic_inscription_2.glb"></model-3d>
-    <model-3d background-color="#ffffff" src="roman_inscription_block.glb"></model-3d>
-    <model-3d background-color="#ffffff" src="rosetta_stone.glb"></model-3d>
+    <h1>Sigüenza cathedral inscription</h1>
+    <model-3d loading='lazy' background-color="#ffffff" src="siguenza_cathedral_inscription_9.glb"></model-3d>
+
+    <model-3d loading='lazy' background-color="#ffffff" src="inscription.glb"></model-3d>
+
+    <h1>Greek inscription from Cirenaica</h1>
+    <model-3d loading='lazy' background-color="#ffffff" src="greek_inscription_from_cirenaica.glb"></model-3d>
+
+    <h1>Wall Inscription of Saveh Jameh Mosque</h1>
+    <model-3d loading='lazy' background-color="#ffffff" src="wall_inscription_of_saveh_jameh_mosque.glb"></model-3d>
+
+    <h1>Carranque Islamic Inscription</h1>
+    <model-3d loading='lazy' background-color="#ffffff" src="carranque_islamic_inscription_2.glb"></model-3d>
+
+    <h1>Latin verse inscription in highlighted red letters on grey sandstone</h1>
+    <model-3d loading='lazy' background-color="#ffffff" src="roman_inscription_block.glb"></model-3d>
+
+    <h1>The Rosetta Stone</h1>
+    <model-3d loading='lazy' background-color="#ffffff" src="rosetta_stone.glb"></model-3d>
 </body>
 </html>
